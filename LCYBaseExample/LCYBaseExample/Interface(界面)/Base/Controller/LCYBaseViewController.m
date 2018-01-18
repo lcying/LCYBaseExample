@@ -20,6 +20,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = COLOR_BACKGROUND;
+    if ([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)]) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)didReceiveMemoryWarning {

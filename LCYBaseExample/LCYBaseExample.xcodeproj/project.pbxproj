@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A361743201028520057E2DF /* LCYNormalTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361742201028520057E2DF /* LCYNormalTVCell.m */; };
+		8A36174E201034930057E2DF /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36174D201034930057E2DF /* SettingViewController.m */; };
+		8A361751201034AC0057E2DF /* SettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361750201034AC0057E2DF /* SettingView.m */; };
+		8A361756201035070057E2DF /* LCYRSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361754201035070057E2DF /* LCYRSAEncryptor.m */; };
+		8A361757201035070057E2DF /* LCYLeftImageTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361755201035070057E2DF /* LCYLeftImageTextField.m */; };
+		8A36175D201042D40057E2DF /* LCYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36175C201042D40057E2DF /* LCYPageViewController.m */; };
+		8A361760201042E90057E2DF /* LCYPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36175F201042E90057E2DF /* LCYPageView.m */; };
+		8A361763201043910057E2DF /* LCYHeadTitlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361762201043910057E2DF /* LCYHeadTitlesView.m */; };
 		8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE3D13200F1EE800D669AA /* AppDelegate.m */; };
 		8AAE3D1A200F1EE800D669AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D18200F1EE800D669AA /* Main.storyboard */; };
 		8AAE3D1C200F1EE800D669AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D1B200F1EE800D669AA /* Assets.xcassets */; };
@@ -52,6 +60,22 @@
 
 /* Begin PBXFileReference section */
 		21E80F28D566E09A208695A3 /* Pods-LCYBaseExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCYBaseExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCYBaseExample/Pods-LCYBaseExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8A361741201028520057E2DF /* LCYNormalTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYNormalTVCell.h; sourceTree = "<group>"; };
+		8A361742201028520057E2DF /* LCYNormalTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYNormalTVCell.m; sourceTree = "<group>"; };
+		8A36174C201034930057E2DF /* SettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		8A36174D201034930057E2DF /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		8A36174F201034AC0057E2DF /* SettingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingView.h; sourceTree = "<group>"; };
+		8A361750201034AC0057E2DF /* SettingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingView.m; sourceTree = "<group>"; };
+		8A361752201035060057E2DF /* LCYLeftImageTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYLeftImageTextField.h; sourceTree = "<group>"; };
+		8A361753201035070057E2DF /* LCYRSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYRSAEncryptor.h; sourceTree = "<group>"; };
+		8A361754201035070057E2DF /* LCYRSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCYRSAEncryptor.m; sourceTree = "<group>"; };
+		8A361755201035070057E2DF /* LCYLeftImageTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCYLeftImageTextField.m; sourceTree = "<group>"; };
+		8A36175B201042D40057E2DF /* LCYPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYPageViewController.h; sourceTree = "<group>"; };
+		8A36175C201042D40057E2DF /* LCYPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYPageViewController.m; sourceTree = "<group>"; };
+		8A36175E201042E90057E2DF /* LCYPageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYPageView.h; sourceTree = "<group>"; };
+		8A36175F201042E90057E2DF /* LCYPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYPageView.m; sourceTree = "<group>"; };
+		8A361761201043910057E2DF /* LCYHeadTitlesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYHeadTitlesView.h; sourceTree = "<group>"; };
+		8A361762201043910057E2DF /* LCYHeadTitlesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYHeadTitlesView.m; sourceTree = "<group>"; };
 		8AAE3D0F200F1EE800D669AA /* LCYBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCYBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE3D12200F1EE800D669AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AAE3D13200F1EE800D669AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -139,6 +163,87 @@
 				F678787CCE31F982D632D2DC /* libPods-LCYBaseExample.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A3617402010281A0057E2DF /* BaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				8A361741201028520057E2DF /* LCYNormalTVCell.h */,
+				8A361742201028520057E2DF /* LCYNormalTVCell.m */,
+			);
+			path = BaseTableViewCell;
+			sourceTree = "<group>";
+		};
+		8A361744201034350057E2DF /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8A361745201034350057E2DF /* Controller */,
+				8A361746201034350057E2DF /* Model */,
+				8A361747201034350057E2DF /* View */,
+				8A361748201034350057E2DF /* ViewModel */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8A361745201034350057E2DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A36174C201034930057E2DF /* SettingViewController.h */,
+				8A36174D201034930057E2DF /* SettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A361746201034350057E2DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A361747201034350057E2DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A36174F201034AC0057E2DF /* SettingView.h */,
+				8A361750201034AC0057E2DF /* SettingView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8A361748201034350057E2DF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A361758201042AF0057E2DF /* LCYPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A361759201042BC0057E2DF /* Controller */,
+				8A36175A201042C40057E2DF /* View */,
+			);
+			path = LCYPageViewController;
+			sourceTree = "<group>";
+		};
+		8A361759201042BC0057E2DF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A36175B201042D40057E2DF /* LCYPageViewController.h */,
+				8A36175C201042D40057E2DF /* LCYPageViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A36175A201042C40057E2DF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8A36175E201042E90057E2DF /* LCYPageView.h */,
+				8A36175F201042E90057E2DF /* LCYPageView.m */,
+				8A361761201043910057E2DF /* LCYHeadTitlesView.h */,
+				8A361762201043910057E2DF /* LCYHeadTitlesView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8AAE3D06200F1EE800D669AA = {
@@ -237,6 +342,8 @@
 		8AAE3D4A200F1F7200D669AA /* Interface(界面) */ = {
 			isa = PBXGroup;
 			children = (
+				8A361758201042AF0057E2DF /* LCYPageViewController */,
+				8A361744201034350057E2DF /* Setting */,
 				8AAE3D63200F25BA00D669AA /* Base */,
 			);
 			path = "Interface(界面)";
@@ -245,6 +352,7 @@
 		8AAE3D4B200F1F7200D669AA /* Tools(三方和工具) */ = {
 			isa = PBXGroup;
 			children = (
+				8A3617402010281A0057E2DF /* BaseTableViewCell */,
 				8AAE3D89200F336500D669AA /* WebViewController */,
 				8AAE3D76200F29A600D669AA /* LCYUtils */,
 				8AAE3D72200F280600D669AA /* LoadingView */,
@@ -341,6 +449,10 @@
 		8AAE3D76200F29A600D669AA /* LCYUtils */ = {
 			isa = PBXGroup;
 			children = (
+				8A361752201035060057E2DF /* LCYLeftImageTextField.h */,
+				8A361755201035070057E2DF /* LCYLeftImageTextField.m */,
+				8A361753201035070057E2DF /* LCYRSAEncryptor.h */,
+				8A361754201035070057E2DF /* LCYRSAEncryptor.m */,
 				8AAE3D87200F301F00D669AA /* CommonUtil.h */,
 				8AAE3D86200F301F00D669AA /* CommonUtil.m */,
 				8AAE3D78200F29C200D669AA /* UIImage+Extension.h */,
@@ -562,16 +674,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AAE3D75200F281F00D669AA /* SpotsLoadingView.m in Sources */,
+				8A361756201035070057E2DF /* LCYRSAEncryptor.m in Sources */,
 				8AAE3D62200F258200D669AA /* LCYWelcomeViewController.m in Sources */,
 				8AAE3D22200F1EE800D669AA /* main.m in Sources */,
 				8AAE3D7D200F29C300D669AA /* UIImage+Extension.m in Sources */,
+				8A361763201043910057E2DF /* LCYHeadTitlesView.m in Sources */,
 				8AAE3D85200F2F6000D669AA /* LCYBaseViewModel.m in Sources */,
+				8A361743201028520057E2DF /* LCYNormalTVCell.m in Sources */,
 				8AAE3D6F200F26A800D669AA /* QDCommonUI.m in Sources */,
 				8AAE3D5B200F227400D669AA /* ExampleTwoApi.m in Sources */,
+				8A36174E201034930057E2DF /* SettingViewController.m in Sources */,
+				8A361751201034AC0057E2DF /* SettingView.m in Sources */,
 				8AAE3D82200F2E0D00D669AA /* LCYBaseView.m in Sources */,
 				8AAE3D8C200F339200D669AA /* WebViewController.m in Sources */,
+				8A36175D201042D40057E2DF /* LCYPageViewController.m in Sources */,
 				8AAE3D70200F26A800D669AA /* QDUIHelper.m in Sources */,
 				8AAE3D5A200F227400D669AA /* UploadFileApi.m in Sources */,
+				8A361760201042E90057E2DF /* LCYPageView.m in Sources */,
+				8A361757201035070057E2DF /* LCYLeftImageTextField.m in Sources */,
 				8AAE3D6A200F25C300D669AA /* LCYBaseViewController.m in Sources */,
 				8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */,
 				8AAE3D5E200F241F00D669AA /* ExampleOneApi.m in Sources */,
