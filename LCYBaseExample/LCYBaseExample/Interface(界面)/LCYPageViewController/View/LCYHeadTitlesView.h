@@ -16,4 +16,6 @@
 
 - (void)setLineViewHidden:(BOOL)hidden;
 
+- (void)setSelectedIndex:(NSInteger)index;
+
 @end

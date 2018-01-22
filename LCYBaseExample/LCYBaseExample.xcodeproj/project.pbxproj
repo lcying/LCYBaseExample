@@ -15,6 +15,7 @@
 		8A36175D201042D40057E2DF /* LCYPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36175C201042D40057E2DF /* LCYPageViewController.m */; };
 		8A361760201042E90057E2DF /* LCYPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36175F201042E90057E2DF /* LCYPageView.m */; };
 		8A361763201043910057E2DF /* LCYHeadTitlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361762201043910057E2DF /* LCYHeadTitlesView.m */; };
+		8A4B5D212015867A0083E6D1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D202015867A0083E6D1 /* TestViewController.m */; };
 		8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE3D13200F1EE800D669AA /* AppDelegate.m */; };
 		8AAE3D1A200F1EE800D669AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D18200F1EE800D669AA /* Main.storyboard */; };
 		8AAE3D1C200F1EE800D669AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D1B200F1EE800D669AA /* Assets.xcassets */; };
@@ -76,6 +77,8 @@
 		8A36175F201042E90057E2DF /* LCYPageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYPageView.m; sourceTree = "<group>"; };
 		8A361761201043910057E2DF /* LCYHeadTitlesView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYHeadTitlesView.h; sourceTree = "<group>"; };
 		8A361762201043910057E2DF /* LCYHeadTitlesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYHeadTitlesView.m; sourceTree = "<group>"; };
+		8A4B5D1F2015867A0083E6D1 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		8A4B5D202015867A0083E6D1 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		8AAE3D0F200F1EE800D669AA /* LCYBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCYBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE3D12200F1EE800D669AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AAE3D13200F1EE800D669AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -231,6 +234,8 @@
 			children = (
 				8A36175B201042D40057E2DF /* LCYPageViewController.h */,
 				8A36175C201042D40057E2DF /* LCYPageViewController.m */,
+				8A4B5D1F2015867A0083E6D1 /* TestViewController.h */,
+				8A4B5D202015867A0083E6D1 /* TestViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -687,6 +692,7 @@
 				8A361751201034AC0057E2DF /* SettingView.m in Sources */,
 				8AAE3D82200F2E0D00D669AA /* LCYBaseView.m in Sources */,
 				8AAE3D8C200F339200D669AA /* WebViewController.m in Sources */,
+				8A4B5D212015867A0083E6D1 /* TestViewController.m in Sources */,
 				8A36175D201042D40057E2DF /* LCYPageViewController.m in Sources */,
 				8AAE3D70200F26A800D669AA /* QDUIHelper.m in Sources */,
 				8AAE3D5A200F227400D669AA /* UploadFileApi.m in Sources */,

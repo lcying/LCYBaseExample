@@ -54,10 +54,15 @@ static CGFloat HeadTitlesButtonLeftRightMargin = 70;//按钮距离self的左右�
 - (void)buttonClickedAction:(QMUIButton *)button{
     NSInteger index = button.tag - 10;
     _LCYCurrentHeadTitlesChangedCallBack(index);
+    [self setSelectedIndex:index];
+}
+
+- (void)setSelectedIndex:(NSInteger)index{
+    QMUIButton *selectedButton = [self.buttonsArray objectAtIndex:index];
     for (QMUIButton *btn in self.buttonsArray) {
         btn.selected = NO;
     }
-    button.selected = YES;
+    selectedButton.selected = YES;
     [UIView animateWithDuration:0.2 animations:^{
         CGRect frame = CGRectMake(HeadTitlesButtonLeftRightMargin + _buttonWidth * index, self.frame.size.height - 2, _buttonWidth, 1);
         self.lineView.frame = frame;
