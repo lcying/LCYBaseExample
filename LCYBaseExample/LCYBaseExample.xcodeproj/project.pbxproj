@@ -16,6 +16,9 @@
 		8A361760201042E90057E2DF /* LCYPageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A36175F201042E90057E2DF /* LCYPageView.m */; };
 		8A361763201043910057E2DF /* LCYHeadTitlesView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A361762201043910057E2DF /* LCYHeadTitlesView.m */; };
 		8A4B5D212015867A0083E6D1 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D202015867A0083E6D1 /* TestViewController.m */; };
+		8A4B5D372015CEE60083E6D1 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D352015CEE60083E6D1 /* UILabel+Extension.m */; };
+		8A4B5D3B2015CF0C0083E6D1 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3A2015CF0C0083E6D1 /* UIButton+Extension.m */; };
+		8A4B5D3E2015CF2D0083E6D1 /* NSTimer+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */; };
 		8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE3D13200F1EE800D669AA /* AppDelegate.m */; };
 		8AAE3D1A200F1EE800D669AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D18200F1EE800D669AA /* Main.storyboard */; };
 		8AAE3D1C200F1EE800D669AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D1B200F1EE800D669AA /* Assets.xcassets */; };
@@ -79,6 +82,13 @@
 		8A361762201043910057E2DF /* LCYHeadTitlesView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYHeadTitlesView.m; sourceTree = "<group>"; };
 		8A4B5D1F2015867A0083E6D1 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		8A4B5D202015867A0083E6D1 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		8A4B5D352015CEE60083E6D1 /* UILabel+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Extension.m"; sourceTree = "<group>"; };
+		8A4B5D362015CEE60083E6D1 /* UILabel+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Extension.h"; sourceTree = "<group>"; };
+		8A4B5D392015CF0C0083E6D1 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		8A4B5D3A2015CF0C0083E6D1 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		8A4B5D3C2015CF2D0083E6D1 /* NSTimer+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Category.h"; sourceTree = "<group>"; };
+		8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Category.m"; sourceTree = "<group>"; };
+		8A4B5D3F2015D0600083E6D1 /* LCYExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYExtensions.h; sourceTree = "<group>"; };
 		8AAE3D0F200F1EE800D669AA /* LCYBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCYBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE3D12200F1EE800D669AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AAE3D13200F1EE800D669AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -251,6 +261,24 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8A4B5D382015CEEE0083E6D1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8A4B5D3F2015D0600083E6D1 /* LCYExtensions.h */,
+				8A4B5D3C2015CF2D0083E6D1 /* NSTimer+Category.h */,
+				8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */,
+				8A4B5D392015CF0C0083E6D1 /* UIButton+Extension.h */,
+				8A4B5D3A2015CF0C0083E6D1 /* UIButton+Extension.m */,
+				8AAE3D78200F29C200D669AA /* UIImage+Extension.h */,
+				8AAE3D77200F29C200D669AA /* UIImage+Extension.m */,
+				8AAE3D7C200F29C300D669AA /* UIView+ORGetController.h */,
+				8AAE3D7A200F29C200D669AA /* UIView+ORGetController.m */,
+				8A4B5D362015CEE60083E6D1 /* UILabel+Extension.h */,
+				8A4B5D352015CEE60083E6D1 /* UILabel+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		8AAE3D06200F1EE800D669AA = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +385,7 @@
 		8AAE3D4B200F1F7200D669AA /* Tools(三方和工具) */ = {
 			isa = PBXGroup;
 			children = (
+				8A4B5D382015CEEE0083E6D1 /* Category */,
 				8A3617402010281A0057E2DF /* BaseTableViewCell */,
 				8AAE3D89200F336500D669AA /* WebViewController */,
 				8AAE3D76200F29A600D669AA /* LCYUtils */,
@@ -460,10 +489,6 @@
 				8A361754201035070057E2DF /* LCYRSAEncryptor.m */,
 				8AAE3D87200F301F00D669AA /* CommonUtil.h */,
 				8AAE3D86200F301F00D669AA /* CommonUtil.m */,
-				8AAE3D78200F29C200D669AA /* UIImage+Extension.h */,
-				8AAE3D77200F29C200D669AA /* UIImage+Extension.m */,
-				8AAE3D7C200F29C300D669AA /* UIView+ORGetController.h */,
-				8AAE3D7A200F29C200D669AA /* UIView+ORGetController.m */,
 			);
 			path = LCYUtils;
 			sourceTree = "<group>";
@@ -678,14 +703,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A4B5D372015CEE60083E6D1 /* UILabel+Extension.m in Sources */,
 				8AAE3D75200F281F00D669AA /* SpotsLoadingView.m in Sources */,
 				8A361756201035070057E2DF /* LCYRSAEncryptor.m in Sources */,
 				8AAE3D62200F258200D669AA /* LCYWelcomeViewController.m in Sources */,
 				8AAE3D22200F1EE800D669AA /* main.m in Sources */,
 				8AAE3D7D200F29C300D669AA /* UIImage+Extension.m in Sources */,
+				8A4B5D3E2015CF2D0083E6D1 /* NSTimer+Category.m in Sources */,
 				8A361763201043910057E2DF /* LCYHeadTitlesView.m in Sources */,
 				8AAE3D85200F2F6000D669AA /* LCYBaseViewModel.m in Sources */,
 				8A361743201028520057E2DF /* LCYNormalTVCell.m in Sources */,
+				8A4B5D3B2015CF0C0083E6D1 /* UIButton+Extension.m in Sources */,
 				8AAE3D6F200F26A800D669AA /* QDCommonUI.m in Sources */,
 				8AAE3D5B200F227400D669AA /* ExampleTwoApi.m in Sources */,
 				8A36174E201034930057E2DF /* SettingViewController.m in Sources */,
