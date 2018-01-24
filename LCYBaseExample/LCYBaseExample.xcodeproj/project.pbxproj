@@ -19,6 +19,7 @@
 		8A4B5D372015CEE60083E6D1 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D352015CEE60083E6D1 /* UILabel+Extension.m */; };
 		8A4B5D3B2015CF0C0083E6D1 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3A2015CF0C0083E6D1 /* UIButton+Extension.m */; };
 		8A4B5D3E2015CF2D0083E6D1 /* NSTimer+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */; };
+		8A78CE992018566100A329D0 /* HCSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A78CE972018566100A329D0 /* HCSStarRatingView.m */; };
 		8A794C2A2016FD9B00AF2FD5 /* LCYSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C282016FD9B00AF2FD5 /* LCYSize.m */; };
 		8A794C2E20171A7700AF2FD5 /* LCYNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C2D20171A7700AF2FD5 /* LCYNaviView.m */; };
 		8A794C312017307300AF2FD5 /* RootNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C302017307300AF2FD5 /* RootNaviViewController.m */; };
@@ -93,6 +94,8 @@
 		8A4B5D3C2015CF2D0083E6D1 /* NSTimer+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Category.h"; sourceTree = "<group>"; };
 		8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Category.m"; sourceTree = "<group>"; };
 		8A4B5D3F2015D0600083E6D1 /* LCYExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYExtensions.h; sourceTree = "<group>"; };
+		8A78CE972018566100A329D0 /* HCSStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCSStarRatingView.m; sourceTree = "<group>"; };
+		8A78CE982018566100A329D0 /* HCSStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCSStarRatingView.h; sourceTree = "<group>"; };
 		8A794C282016FD9B00AF2FD5 /* LCYSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCYSize.m; sourceTree = "<group>"; };
 		8A794C292016FD9B00AF2FD5 /* LCYSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYSize.h; sourceTree = "<group>"; };
 		8A794C2C20171A7700AF2FD5 /* LCYNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYNaviView.h; sourceTree = "<group>"; };
@@ -291,6 +294,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		8A78CE962018565B00A329D0 /* StarsView */ = {
+			isa = PBXGroup;
+			children = (
+				8A78CE982018566100A329D0 /* HCSStarRatingView.h */,
+				8A78CE972018566100A329D0 /* HCSStarRatingView.m */,
+			);
+			path = StarsView;
+			sourceTree = "<group>";
+		};
 		8A794C2B20171A6800AF2FD5 /* LCYNaviView */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +418,7 @@
 		8AAE3D4B200F1F7200D669AA /* Tools(三方和工具) */ = {
 			isa = PBXGroup;
 			children = (
+				8A78CE962018565B00A329D0 /* StarsView */,
 				8A794C2B20171A6800AF2FD5 /* LCYNaviView */,
 				8A4B5D382015CEEE0083E6D1 /* Category */,
 				8A3617402010281A0057E2DF /* BaseTableViewCell */,
@@ -745,6 +758,7 @@
 				8A361743201028520057E2DF /* LCYNormalTVCell.m in Sources */,
 				8A4B5D3B2015CF0C0083E6D1 /* UIButton+Extension.m in Sources */,
 				8AAE3D6F200F26A800D669AA /* QDCommonUI.m in Sources */,
+				8A78CE992018566100A329D0 /* HCSStarRatingView.m in Sources */,
 				8AAE3D5B200F227400D669AA /* ExampleTwoApi.m in Sources */,
 				8A36174E201034930057E2DF /* SettingViewController.m in Sources */,
 				8A361751201034AC0057E2DF /* SettingView.m in Sources */,

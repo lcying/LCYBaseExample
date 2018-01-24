@@ -7,4 +7,6 @@ target 'LCYBaseExample' do
   pod 'YYKit', '~>1.0.9'
   pod 'QMUIKit', '~> 1.4.0'
   pod 'MBProgressHUD', '~> 0.8'
+  pod 'MLeaksFinder'
+  pod 'IQKeyboardManager', '~> 5.0.7'
 end
