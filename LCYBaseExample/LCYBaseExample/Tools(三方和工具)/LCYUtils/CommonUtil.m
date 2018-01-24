@@ -52,17 +52,35 @@
     [[YYImageCache sharedCache].diskCache removeAllObjectsWithBlock:^{}];
 }
 
-+ (id)dictionaryWithJsonString:(NSString *)jsonString{
-    if (jsonString == nil) {
++ (id)dictionaryWithJson:(id)json{
+    if (!json || json == (id)kCFNull) {
         return nil;
     }
-    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dic = nil;
+    NSData *jsonData = nil;
+    
+    if ([json isKindOfClass:[NSDictionary class]]) {
+        dic = json;
+    }
+    
+    if ([json isKindOfClass:[NSString class]]) {
+        jsonData = [(NSString *)json dataUsingEncoding:NSUTF8StringEncoding];
+    }
+    
+    if ([json isKindOfClass:[NSData class]]) {
+        jsonData = json;
+    }
+    
     NSError *err;
-    id dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    if (jsonData) {
+        dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    }
+    
     if(err){
         NSLog(@"json解析失败：%@",err);
         return nil;
     }
+    
     NSDictionary *noNullDic = [self nullDic:dic];
     return noNullDic;
 }

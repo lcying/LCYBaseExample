@@ -14,6 +14,10 @@
 #define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 #define PX_WIDTH [UIScreen mainScreen].bounds.size.width/375
 #define PX_HEIGHT [UIScreen mainScreen].bounds.size.height/667
+//根据iPhone6和当前机型得到的缩放后的宽高
+#define autoScaleW(w) [LCYSize getScaleW:w]
+#define autoScaleH(h) [LCYSize getScaleH:h]
+
 //导航栏高度
  #define SafeAreaTopHeight (SCREEN_HEIGHT == 812.0 ? 88 : 64)
 //底边栏高度
@@ -40,8 +44,11 @@
 #define FOURTH_SELECTED_ICON [UIImage imageNamed:@"example"]
 
 //颜色
+//主打色
 #define COLOR_MAIN [UIColor colorWithRed:49.0/255.0 green:168.0/255.0 blue:223.0/255.0 alpha:1.0]
+//背景色
 #define COLOR_BACKGROUND [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0]
+//主要文字颜色
 #define COLOR_MAINTEXT [UIColor colorWithRed:0 green:0 blue:0 alpha:1.0]
 
 //字体大小

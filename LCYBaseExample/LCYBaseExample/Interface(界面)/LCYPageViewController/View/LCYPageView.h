@@ -7,12 +7,9 @@
 //
 
 #import "LCYBaseView.h"
-#import "TestViewController.h"
 
 @interface LCYPageView : LCYBaseView
 
-@property (nonatomic, strong) TestViewController *vc0;
-@property (nonatomic, strong) TestViewController *vc1;
-@property (nonatomic, strong) TestViewController *vc2;
+@property (nonatomic, strong) UIScrollView *contentScrollView;
 
 @end

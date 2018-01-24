@@ -12,7 +12,7 @@
 
 - (void)startRequest:(YTKRequest *)api andSuccess:(void(^)(id obj))successBlock andFailedBlock:(void(^)(id obj))failedBlock{
     [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSDictionary *dict = [CommonUtil dictionaryWithJsonString:request.responseString];
+        NSDictionary *dict = [CommonUtil dictionaryWithJson:request.responseString];
         NSString *code = [NSString stringWithFormat:@"%@",[dict objectForKey:@"errNum"]];
         if ([code isEqualToString:RIGHT_CODE]) {
             successBlock(dict);
@@ -21,7 +21,7 @@
             failedBlock(errMsg);
         }
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
-        NSDictionary *dict = [CommonUtil dictionaryWithJsonString:request.responseString];
+        NSDictionary *dict = [CommonUtil dictionaryWithJson:request.responseString];
         NSString *errMsg = [NSString stringWithFormat:@"%@",[dict objectForKey:@"errMsg"]];
         failedBlock(errMsg);
     }];

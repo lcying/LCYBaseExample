@@ -10,6 +10,7 @@
 
 @interface NSTimer (Category)
 
+//nstimer自带block的方法在iOS10之前不能用
 + (NSTimer *)lcy_scheduledTimerWithTimeInterval:(NSTimeInterval)interval block:(void(^)())block repests:(BOOL)repeats;
 
 @end

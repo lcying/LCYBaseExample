@@ -23,7 +23,7 @@
 /**
  * json格式字符串转字典
  */
-+ (id)dictionaryWithJsonString:(NSString *)jsonString;
++ (id)dictionaryWithJson:(id)json;
 
 /**
  * 时间戳毫秒转换成时间格式
