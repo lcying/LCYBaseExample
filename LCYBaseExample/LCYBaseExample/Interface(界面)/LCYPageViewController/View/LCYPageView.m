@@ -23,6 +23,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.headTitlesArray = @[@"标题1",@"标题2",@"标题3"];
+        //导航栏
+        [self.topBarView setTitle:@"测试"];
+        [self.topBarView showLeft:LCYLEFTTYPEIMAGETEXT];
+        self.topBarView.leftLabel.text = @"左";
+        [self.topBarView showRight:LCYLEFTTYPEIMAGETEXT];
+        self.topBarView.rightLabel.text = @"右";
 
         [self headTitlesView];
         [self contentScrollView];
@@ -39,7 +45,7 @@
 
 - (LCYHeadTitlesView *)headTitlesView{
     if (!_headTitlesView) {
-        _headTitlesView = [[LCYHeadTitlesView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 40) andTitles:self.headTitlesArray];
+        _headTitlesView = [[LCYHeadTitlesView alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight, SCREEN_WIDTH, 40) andTitles:self.headTitlesArray];
         [self addSubview:_headTitlesView];
         [_headTitlesView setLineViewHidden:YES];
     }
@@ -48,7 +54,7 @@
 
 - (UIScrollView *)contentScrollView{
     if (!_contentScrollView) {
-        _contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 40, SCREEN_WIDTH, SCREEN_HEIGHT - SafeAreaTopHeight - 40)];
+        _contentScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight + 40, SCREEN_WIDTH, SCREEN_HEIGHT - SafeAreaTopHeight - 40)];
         _contentScrollView.backgroundColor = [UIColor redColor];
         [self addSubview:_contentScrollView];
         _contentScrollView.contentSize = CGSizeMake(SCREEN_WIDTH * self.headTitlesArray.count, SCREEN_HEIGHT - SafeAreaTopHeight - 40);

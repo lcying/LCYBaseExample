@@ -26,6 +26,8 @@
 - (void)initInterface{
     self.settingView = [[SettingView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - SafeAreaTopHeight)];
     [self.view addSubview:_settingView];
+    
+    [self.settingView.topBarView leftClickPop];
 }
 
 @end

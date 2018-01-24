@@ -21,6 +21,9 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        [self.topBarView setTitle:@"设置"];
+        [self.topBarView showLeft:LCYLEFTTYPEONLYIMAGE];
+        
         [self contentTableView];
     }
     return self;
@@ -28,7 +31,7 @@
 
 - (UITableView *)contentTableView{
     if (!_contentTableView) {
-        _contentTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - SafeAreaTopHeight) style:UITableViewStylePlain];
+        _contentTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, SafeAreaTopHeight, SCREEN_WIDTH, SCREEN_HEIGHT - SafeAreaTopHeight) style:UITableViewStylePlain];
         [self addSubview:_contentTableView];
         _contentTableView.delegate = self;
         _contentTableView.dataSource = self;

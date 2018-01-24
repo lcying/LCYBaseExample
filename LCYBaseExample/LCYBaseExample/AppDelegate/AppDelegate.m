@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RootNaviViewController.h"
 #import "LCYPageViewController.h"
 
 @interface AppDelegate ()
@@ -29,8 +30,7 @@
 
 
 - (void)initRootViewController{
-    QMUINavigationController *naviVC = [[QMUINavigationController alloc] initWithRootViewController:[[LCYPageViewController alloc] init]];
-    naviVC.navigationBar.translucent = NO;
+    RootNaviViewController *naviVC = [[RootNaviViewController alloc] initWithRootViewController:[[LCYPageViewController alloc] init]];
     self.window.rootViewController = naviVC;
 }
 

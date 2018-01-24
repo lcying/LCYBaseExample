@@ -25,6 +25,14 @@
     return self;
 }
 
+- (LCYNaviView *)topBarView{
+    if (!_topBarView) {
+        _topBarView = [[LCYNaviView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SafeAreaTopHeight)];
+        [self addSubview:_topBarView];
+    }
+    return _topBarView;
+}
+
 - (UILabel *)noDataLabel{
     if (!_noDataLabel) {
         _noDataLabel = [[UILabel alloc] initWithFont:FONT_MAIN textColor:COLOR_MAINTEXT];

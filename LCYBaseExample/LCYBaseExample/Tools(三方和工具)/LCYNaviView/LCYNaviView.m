@@ -13,6 +13,14 @@
 #define FONT_RIGHTLABEL [UIFont fontWithName:@"Helvetica" size:15]
 //导航栏标题颜色
 #define COLOR_NAVI_TITLE [UIColor qmui_colorWithHexString:@"#333333"]
+//导航栏底部线条颜色
+#define COLOR_NAVI_LINE [UIColor qmui_colorWithHexString:@"#D4D4D4"]
+
+@interface LCYNaviView ()
+
+@property (nonatomic, assign) BOOL isLeftPop;
+
+@end
 
 @implementation LCYNaviView
 
@@ -21,11 +29,13 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor clearColor];
+        self.isLeftPop = NO;
         [self topView];
         [self titleView];
         [self titleLabel];
         [self leftView];
         [self rightView];
+        [self lineView];
     }
     return self;
 }
@@ -47,7 +57,7 @@
 
 - (UIView *)titleView{
     if (!_titleView) {
-        _titleView = [[UIView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH - 70, 0, SCREEN_WIDTH - 140, 44)];
+        _titleView = [[UIView alloc] initWithFrame:CGRectMake(70, 0, SCREEN_WIDTH - 140, 44)];
         [self.topView addSubview:_titleView];
         _titleView.backgroundColor = [UIColor clearColor];
     }
@@ -124,13 +134,30 @@
     if (!_rightImageView) {
         _rightImageView = [[UIImageView alloc] initWithFrame:CGRectMake(44, 11.5, 14, 21)];
         [self.rightView addSubview:_rightImageView];
+        _rightImageView.image = [UIImage imageNamed:@"arrowRight"];
     }
     return _rightImageView;
+}
+
+- (UIView *)lineView{
+    if (!_lineView) {
+        _lineView = [[UIView alloc] init];
+        [self addSubview:_lineView];
+        _lineView.backgroundColor = COLOR_NAVI_LINE;
+        [_lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.right.bottom.mas_equalTo(0);
+            make.height.mas_equalTo(1);
+        }];
+    }
+    return _lineView;
 }
 
 #pragma mark - method -----------------------
 
 - (void)showLeft:(LCYLEFTTYPE)type{
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftTapAction)];
+    [self.leftView addGestureRecognizer:tap];
+    
     switch (type) {
         case LCYLEFTTYPEONLYTEXT:
         {
@@ -144,6 +171,7 @@
             break;
         case LCYLEFTTYPEIMAGETEXT:
         {
+            [self leftImageView];
             self.leftLabel.frame = CGRectMake(30, 0, 40, 44);
         }
             break;
@@ -153,6 +181,9 @@
 }
 
 - (void)showRight:(LCYLEFTTYPE)type{
+    UITapGestureRecognizer *tapRight = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(rightTapAction)];
+    [self.rightView addGestureRecognizer:tapRight];
+    
     switch (type) {
         case LCYLEFTTYPEONLYTEXT:
         {
@@ -166,12 +197,33 @@
             break;
         case LCYLEFTTYPEIMAGETEXT:
         {
+            [self rightImageView];
             self.rightLabel.frame = CGRectMake(0, 0, 40, 44);
         }
             break;
         default:
             break;
     }
+}
+
+- (void)setTitle:(NSString *)title{
+    self.titleLabel.text = title;
+}
+
+- (void)leftTapAction{
+    if (self.isLeftPop == YES) {
+        [[self viewController].navigationController popViewControllerAnimated:YES];
+    }else{
+        _LeftClickCallBack();
+    }
+}
+
+- (void)rightTapAction{
+    _RightClickCallBack();
+}
+
+- (void)leftClickPop{
+    self.isLeftPop = YES;
 }
 
 @end

@@ -19,6 +19,10 @@
 		8A4B5D372015CEE60083E6D1 /* UILabel+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D352015CEE60083E6D1 /* UILabel+Extension.m */; };
 		8A4B5D3B2015CF0C0083E6D1 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3A2015CF0C0083E6D1 /* UIButton+Extension.m */; };
 		8A4B5D3E2015CF2D0083E6D1 /* NSTimer+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */; };
+		8A794C2A2016FD9B00AF2FD5 /* LCYSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C282016FD9B00AF2FD5 /* LCYSize.m */; };
+		8A794C2E20171A7700AF2FD5 /* LCYNaviView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C2D20171A7700AF2FD5 /* LCYNaviView.m */; };
+		8A794C312017307300AF2FD5 /* RootNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C302017307300AF2FD5 /* RootNaviViewController.m */; };
+		8A794C342017308500AF2FD5 /* RootTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A794C332017308500AF2FD5 /* RootTabBarViewController.m */; };
 		8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE3D13200F1EE800D669AA /* AppDelegate.m */; };
 		8AAE3D1A200F1EE800D669AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D18200F1EE800D669AA /* Main.storyboard */; };
 		8AAE3D1C200F1EE800D669AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE3D1B200F1EE800D669AA /* Assets.xcassets */; };
@@ -89,6 +93,14 @@
 		8A4B5D3C2015CF2D0083E6D1 /* NSTimer+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Category.h"; sourceTree = "<group>"; };
 		8A4B5D3D2015CF2D0083E6D1 /* NSTimer+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Category.m"; sourceTree = "<group>"; };
 		8A4B5D3F2015D0600083E6D1 /* LCYExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYExtensions.h; sourceTree = "<group>"; };
+		8A794C282016FD9B00AF2FD5 /* LCYSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCYSize.m; sourceTree = "<group>"; };
+		8A794C292016FD9B00AF2FD5 /* LCYSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCYSize.h; sourceTree = "<group>"; };
+		8A794C2C20171A7700AF2FD5 /* LCYNaviView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LCYNaviView.h; sourceTree = "<group>"; };
+		8A794C2D20171A7700AF2FD5 /* LCYNaviView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCYNaviView.m; sourceTree = "<group>"; };
+		8A794C2F2017307300AF2FD5 /* RootNaviViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootNaviViewController.h; sourceTree = "<group>"; };
+		8A794C302017307300AF2FD5 /* RootNaviViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootNaviViewController.m; sourceTree = "<group>"; };
+		8A794C322017308500AF2FD5 /* RootTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootTabBarViewController.h; sourceTree = "<group>"; };
+		8A794C332017308500AF2FD5 /* RootTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootTabBarViewController.m; sourceTree = "<group>"; };
 		8AAE3D0F200F1EE800D669AA /* LCYBaseExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCYBaseExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE3D12200F1EE800D669AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8AAE3D13200F1EE800D669AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -279,6 +291,15 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		8A794C2B20171A6800AF2FD5 /* LCYNaviView */ = {
+			isa = PBXGroup;
+			children = (
+				8A794C2C20171A7700AF2FD5 /* LCYNaviView.h */,
+				8A794C2D20171A7700AF2FD5 /* LCYNaviView.m */,
+			);
+			path = LCYNaviView;
+			sourceTree = "<group>";
+		};
 		8AAE3D06200F1EE800D669AA = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +406,7 @@
 		8AAE3D4B200F1F7200D669AA /* Tools(三方和工具) */ = {
 			isa = PBXGroup;
 			children = (
+				8A794C2B20171A6800AF2FD5 /* LCYNaviView */,
 				8A4B5D382015CEEE0083E6D1 /* Category */,
 				8A3617402010281A0057E2DF /* BaseTableViewCell */,
 				8AAE3D89200F336500D669AA /* WebViewController */,
@@ -429,6 +451,10 @@
 			children = (
 				8AAE3D68200F25C300D669AA /* LCYBaseViewController.h */,
 				8AAE3D69200F25C300D669AA /* LCYBaseViewController.m */,
+				8A794C2F2017307300AF2FD5 /* RootNaviViewController.h */,
+				8A794C302017307300AF2FD5 /* RootNaviViewController.m */,
+				8A794C322017308500AF2FD5 /* RootTabBarViewController.h */,
+				8A794C332017308500AF2FD5 /* RootTabBarViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -483,6 +509,8 @@
 		8AAE3D76200F29A600D669AA /* LCYUtils */ = {
 			isa = PBXGroup;
 			children = (
+				8A794C292016FD9B00AF2FD5 /* LCYSize.h */,
+				8A794C282016FD9B00AF2FD5 /* LCYSize.m */,
 				8A361752201035060057E2DF /* LCYLeftImageTextField.h */,
 				8A361755201035070057E2DF /* LCYLeftImageTextField.m */,
 				8A361753201035070057E2DF /* LCYRSAEncryptor.h */,
@@ -704,8 +732,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A4B5D372015CEE60083E6D1 /* UILabel+Extension.m in Sources */,
+				8A794C2A2016FD9B00AF2FD5 /* LCYSize.m in Sources */,
 				8AAE3D75200F281F00D669AA /* SpotsLoadingView.m in Sources */,
 				8A361756201035070057E2DF /* LCYRSAEncryptor.m in Sources */,
+				8A794C312017307300AF2FD5 /* RootNaviViewController.m in Sources */,
 				8AAE3D62200F258200D669AA /* LCYWelcomeViewController.m in Sources */,
 				8AAE3D22200F1EE800D669AA /* main.m in Sources */,
 				8AAE3D7D200F29C300D669AA /* UIImage+Extension.m in Sources */,
@@ -721,6 +751,7 @@
 				8AAE3D82200F2E0D00D669AA /* LCYBaseView.m in Sources */,
 				8AAE3D8C200F339200D669AA /* WebViewController.m in Sources */,
 				8A4B5D212015867A0083E6D1 /* TestViewController.m in Sources */,
+				8A794C342017308500AF2FD5 /* RootTabBarViewController.m in Sources */,
 				8A36175D201042D40057E2DF /* LCYPageViewController.m in Sources */,
 				8AAE3D70200F26A800D669AA /* QDUIHelper.m in Sources */,
 				8AAE3D5A200F227400D669AA /* UploadFileApi.m in Sources */,
@@ -728,6 +759,7 @@
 				8A361757201035070057E2DF /* LCYLeftImageTextField.m in Sources */,
 				8AAE3D6A200F25C300D669AA /* LCYBaseViewController.m in Sources */,
 				8AAE3D14200F1EE800D669AA /* AppDelegate.m in Sources */,
+				8A794C2E20171A7700AF2FD5 /* LCYNaviView.m in Sources */,
 				8AAE3D5E200F241F00D669AA /* ExampleOneApi.m in Sources */,
 				8AAE3D7E200F29C300D669AA /* UIView+ORGetController.m in Sources */,
 				8AAE3D88200F301F00D669AA /* CommonUtil.m in Sources */,

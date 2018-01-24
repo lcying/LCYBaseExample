@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LCYNaviView.h"
 
 @interface LCYBaseView : UIView
+
+@property (nonatomic, strong) LCYNaviView *topBarView;
 
 - (void)showNoDataView;
 
