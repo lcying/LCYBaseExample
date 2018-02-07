@@ -36,7 +36,6 @@
         @WeakObj(self);
         [self.headTitlesView setLCYCurrentHeadTitlesChangedCallBack:^(NSInteger index) {
             @StrongObj(self);
-            
             self.contentScrollView.contentOffset = CGPointMake(index * SCREEN_WIDTH, 0);
         }];
     }

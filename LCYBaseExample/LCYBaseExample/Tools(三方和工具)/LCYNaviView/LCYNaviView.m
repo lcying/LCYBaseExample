@@ -214,12 +214,12 @@
     if (self.isLeftPop == YES) {
         [[self viewController].navigationController popViewControllerAnimated:YES];
     }else{
-        _LeftClickCallBack();
+//        _LeftClickCallBack();
     }
 }
 
 - (void)rightTapAction{
-    _RightClickCallBack();
+//    _RightClickCallBack();
 }
 
 - (void)leftClickPop{
