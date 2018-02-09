@@ -10,82 +10,58 @@
 
 @interface UIButton (Extension)
 
-//lcy
+/**
+ *  创建按钮
+ *
+ *  @param title         标题
+ *  @param titleColor    字体颜色
+ *  @param fontSize      字号
+ *  @param imageName     图像
+ *  @param backImageName 背景图像
+ *  @param callBack      点击事件
+ *
+ *  @return UIButton
+ */
 - (instancetype)initWithTitle:(NSString *)title andTitleColor:(UIColor *)titleColor andFontSize:(CGFloat)fontSize andImageName:(NSString *)imageName andBackImageName:(NSString *)backImageName andCallBack:(void (^)(UIButton *))callBack;
 
 
-
 /**
- *  创建按钮有文字,有颜色,有字体,有图片,没有有背景
+ *  创建按钮
  *
  *  @param title         标题
- *  @param color         字体颜色
- *  @param fontSize      字号
+ *  @param titleColor    字体颜色
+ *  @param font          字号
  *  @param imageName     图像
+ *  @param target        目标对象
+ *  @param action        点击事件
  *
  *  @return UIButton
  */
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font imageName:(NSString *)imageName target:(id)target action:(SEL)action;
 
 /**
- *  创建按钮有文字,有颜色,有字体,有图片,有背景
+ *  创建按钮
  *
  *  @param title         标题
- *  @param titleColor         字体颜色
- *  @param font      字号
+ *  @param titleColor    字体颜色
+ *  @param font          字号
  *  @param imageName     图像
- *  @param backImageName 背景图像
  *
  *  @return UIButton
  */
-+ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font imageName:(NSString *)imageName target:(id)target action:(SEL)action backImageName:(NSString *)backImageName;
++ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font imageName:(NSString *)imageName;
 
 
 /**
- *  创建按钮有文字,有颜色，有字体，没有图片，没有背景
+ *  创建按钮
  *
  *  @param title         标题
  *  @param titleColor    标题颜色
- *  @param backImageName 背景图像名称
+ *  @param font          字号
  *
  *  @return UIButton
  */
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font target:(id)target action:(SEL)action;
 
-/**
- *  创建按钮有文字,有颜色，有字体，没有图片，有背景
- *
- *  @param title         标题
- *  @param titleColor    标题颜色
- *  @param backImageName 背景图像名称
- *
- *  @return UIButton
- */
-+ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor font:(UIFont *)font target:(id)target action:(SEL)action backImageName:(NSString *)backImageName;
-
-#pragma mark  --- 有文字,有颜色，有字体，有图片，有有背景图片，有边框颜色
-/**
- *  创建按钮有文字,有颜色,有字体,有图片,没有有背景,有边框颜色
- *
- *  @param title         标题
- *  @param color         字体颜色
- *  @param fontSize      字号
- *  @param layerColor    颜色rgb数组有
- *  @param borderWidth   按钮边框宽度
- *  @param CornerRadius  按钮角的圆滑度
- *
- *  @return UIButton
- */
-
-+ (instancetype)buttonWithTitle:(NSString *)title
-                     titleColor:(UIColor *)titleColor
-                           font:(UIFont *)font
-                      imageName:(NSString *)imageName
-                         target:(id)target
-                         action:(SEL)action
-                  backImageName:(NSString *)backImageName
-                     layerColor:(NSArray *)RGBArr
-                    borderWidth:(CGFloat)width
-                   CornerRadius:(CGFloat)radius;
 
 @end

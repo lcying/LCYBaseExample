@@ -80,7 +80,7 @@
     [self.navigationController pushViewController:controller animated:true];
 }
 
--(void)pop{
+- (void)pop{
     if (self.presentingViewController){
         [self dismissViewControllerAnimated:YES completion:nil];
     }else{
