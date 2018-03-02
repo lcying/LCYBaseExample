@@ -37,9 +37,9 @@ typedef enum : NSUInteger {
 //导航栏底部的线
 @property (nonatomic, strong) UIView *lineView;
 
-@property (nonatomic, strong) void(^LeftClickCallBack) ();
+@property (nonatomic, strong) void(^LeftClickCallBack) (void);
 
-@property (nonatomic, strong) void(^RightClickCallBack) ();
+@property (nonatomic, strong) void(^RightClickCallBack) (void);
 
 /**
  * 设置左视图
